@@ -1,0 +1,16 @@
+.card-icon {
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.card-count {
+  margin-right: 16px;
+}
+
+.card-count.empty {
+  color: #706e6b;
+}
+
+.card-count.filled {
+  color: #fff;
+}

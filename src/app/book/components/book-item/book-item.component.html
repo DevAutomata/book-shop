@@ -1,0 +1,17 @@
+<div class="book-image" [ngStyle]="{'background-image': 'url(' + book.image + ')'}">
+</div>
+<div class="book-content">
+  <p class="book-title">{{ book.name }}</p>
+</div>
+<div class="book-actions">
+  <span class="book-price">{{ book.price }}</span>
+  <button
+    type="button"
+    nglButton
+    variant="outline-brand"
+    [disabled]="!book.isAvailable"
+    (click)="addBook()"
+  >
+    Buy
+  </button>
+</div>

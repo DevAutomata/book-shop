@@ -1,0 +1,20 @@
+.book-list {
+  /*display: grid;*/
+  /*grid-template-columns: repeat(5, 1fr);*/
+  /*grid-gap: 20px;*/
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.book {
+  display: block;
+  width: 260px;
+  margin-bottom: 30px;
+  padding: 16px;
+  box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+  background: #fff;
+}
+
