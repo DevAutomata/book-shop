@@ -1,0 +1,21 @@
+<div class="container">
+<div *ngIf="purchases.length; else emptyCart">
+  <h1 class="title title-filled">In your cart now:</h1>
+
+  <ul class="purchases-list" *ngIf="purchases.length; else emptyCart">
+    <li class="cart-item" *ngFor="let purchase of purchases; index as idx;">
+      <app-cart-item
+        [item]="purchase"
+        [idx]="idx + 1"
+        (increase)="increase($event)"
+        (decrease)="decrease($event)"
+        (remove)="remove($event)"
+      ></app-cart-item>
+    </li>
+  </ul>
+</div>
+
+<ng-template #emptyCart>
+  <h1 class="title title-empty">No item in you cart yet :(</h1>
+</ng-template>
+</div>

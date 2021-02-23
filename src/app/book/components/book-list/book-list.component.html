@@ -1,0 +1,9 @@
+<ul class="book-list" *ngIf="books.length; else loader">
+  <li class="book" *ngFor="let book of books">
+    <app-book-item [book]="book" (add)="addBook($event)"></app-book-item>
+  </li>
+</ul>
+
+<ng-template #loader>
+  <app-loader></app-loader>
+</ng-template>

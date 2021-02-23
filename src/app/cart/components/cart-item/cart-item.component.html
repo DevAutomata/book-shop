@@ -1,0 +1,31 @@
+<div class="cart">
+  <span class="cart-name">{{ idx }}.</span>
+  <span class="cart-name">{{ item.name }}</span>
+  <div class="buttons">
+    <button
+      type="button"
+      nglButtonIcon
+      variant="brand"
+      iconName="utility:arrowdown"
+      (click)="decreaseItem()"
+    ></button>
+    <span>{{ item.count }}</span>
+    <button
+      type="button"
+      nglButtonIcon
+      variant="brand"
+      iconName="utility:arrowup"
+      (click)="increaseItem()"
+    ></button>
+    <button
+      type="button"
+      nglButtonIcon
+      variant="brand"
+      iconName="utility:delete"
+      (click)="removeItem()"
+    ></button>
+  </div>
+</div>
+
+
+
